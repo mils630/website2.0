@@ -6,6 +6,11 @@ body {
   color: #f0f0f0;
 }
 
+.site-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 header {
   background-color: #5555db;
   color: white;
@@ -26,10 +31,18 @@ header {
   margin-right: 20px;
   object-fit: cover;
   border: 2px solid white;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .header-title {
   flex-grow: 1;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 nav ul {
@@ -80,12 +93,98 @@ ul li {
   font-family: 'Courier New', Courier, monospace; /* Different font for projects section */
 }
 
-footer {
-  background-color: #101048;
-  color: white;
+/* ========== PROJECTS & CV ========== */
+#projects ul {
+  list-style: none;
   text-align: center;
-  padding: 15px 0;
-  position: relative;
-  bottom: 0;
+  margin-bottom: 15px;
+}
+
+.download-cv {
+  display: inline-block;
+  background-color: #4472c4;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.download-cv:hover {
+  background-color: #0d1d33;
+}
+
+/* ========== COMMENT FORM ========== */
+#contact {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+#contact input,
+#contact textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #999;
+  font-size: 16px;
   width: 100%;
 }
+
+#contact button {
+  padding: 10px;
+  background-color: rgb(11, 11, 15);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#contact button:hover {
+  background-color: rgb(241, 226, 226);
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background-color: #e4ecf4;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* ========== DARK MODE CLASSES ========== */
+.theme-toggle-checkbox:checked ~ .site-wrapper #contact {
+  background-color: #282853;
+}
+
+.theme-toggle-checkbox:checked ~ .site-wrapper #contact input,
+.theme-toggle-checkbox:checked ~ .site-wrapper #contact textarea {
+  background-color: #f2f0f3;
+  color: #fff;
+  border-color: #f1e3e3;
+}
+
+.theme-toggle-checkbox:checked ~ .site-wrapper #contact button {
+  background-color: #d4caca;
+  color: #050505;
+}
+
+.theme-toggle-checkbox:checked ~ .site-wrapper nav ul li a {
+  color: #fff;
+}
+
+.theme-toggle-checkbox:checked ~ .site-wrapper nav ul li a:hover {
+  background: #fff;
+  color: #000;
+}
+

@@ -8,8 +8,14 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="header-container">
+   <!-- THEME TOGGLE -->
+  <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox" />
+  <label for="theme-toggle" class="theme-toggle-label"></label>
+  
+<!-- MAIN CONTENT CONTAINER -->
+  <div class="site-wrapper">
+    <header>
+      
       <img src="profile.jpeg" alt="My Photo" class="profile-pic" />
       <div class="header-title">
         <h1>Welcome to My Portfolio</h1>
@@ -35,12 +41,26 @@
 
     <section id="skills">
       <h2>Skills</h2>
-      <ul>
-        <li>Networking</li>
-        <li>HTML & CSS</li>
-        <li>Python</li>
-        <li>Git & GitHub</li>
-        <li>MERN stack (learning)</li>
+
+        <div class="skill-wrapper">
+            <div class="skill-label">Networking</div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width: 60%; background-color: #4472c4;">60%</div></div>
+          
+          <div class="skill-label">HTML</div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width: 80%; background-color: #5b9bd5;">80%</div></div>
+
+          <div class="skill-label">CSS</div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width: 30%; background-color: #5b9bd5;">30%</div></div>
+
+          <div class="skill-label">Python</div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width: 40%; background-color: #ed7d31;">40%</div></div>
+
+          <div class="skill-label">Git & GitHub</div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width: 50%; background-color: #70ad47;">50%</div></div>
+
+          <div class="skill-label">MERN Stack</div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width: 30%; background-color: #ffc000;">30%</div></div>
+        </div>
       </ul>
     </section>
 
@@ -55,11 +75,11 @@
     </section>
 
     <!-- ====== PROJECTS SECTION ====== -->
-    <section id="projects" class="projects-font">
+    <section id="projects" class="text-center">
       <h2>Projects</h2>
       <ul>
-        <li><a href="https://powerlearnproject.org" target="_blank">PLP Project</a></li>
-
+        <li><a href="https://github.com/mils630/website2.0/blob/main/index.html" target="https://github.com/mils630/website2.0/blob/main/index.html">PLP Project</a></li>
+        <a href="cv.pdf" class="download-cv" download>Download My CV</a>
       </ul>
     </section>
 
@@ -78,6 +98,19 @@
     </section>
 
     <section id="contact">
+      <h2>Leave a Comment</h2>
+        <form action="https://formsubmit.co/milanmutheu1@gmail.com" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
       <h2>Contact</h2>
       <p>Email: milanmutheu1@gmail.com</p>
       <p>GitHub: <a href="https://github.com/mils630" target="_blank">mils630</a></p>
@@ -87,6 +120,8 @@
   <footer>
     <p>&copy; 2025 Milan Mutheu. All rights reserved.</p>
   </footer>
+</div>
 </body>
 </html>
+
 

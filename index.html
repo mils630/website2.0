@@ -8,39 +8,38 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-   <!-- THEME TOGGLE -->
+  <!-- THEME TOGGLE -->
   <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox" />
   <label for="theme-toggle" class="theme-toggle-label"></label>
-  
-<!-- MAIN CONTENT CONTAINER -->
+
+  <!-- MAIN CONTENT CONTAINER -->
   <div class="site-wrapper">
     <header>
-      
-      <img src="profile.jpeg" alt="My Photo" class="profile-pic" />
-    
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#interests">Interests</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-    </div>
-  </header>
+        
+        <img src="profile.jpeg" alt="My Photo" class="profile-pic" />
+        <div class="header-title">
+          <h1>Welcome to My Portfolio</h1>
+          <nav>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#interests">Interests</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I work in networking and am transitioning into software development. I'm passionate about improving client services and reducing system downtime through better digital solutions.</p>
-    </section>
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>I work in networking and am transitioning into software development. I have a background in business and tech infrastructure. I'm passionate about improving client services and reducing system downtime through better digital solutions.</p>
+      </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
         <div class="skill-wrapper">
             <div class="skill-label">Networking</div>
           <div class="skill-bar"><div class="skill-bar-fill" style="width: 60%; background-color: #4472c4;">60%</div></div>
@@ -60,44 +59,41 @@
           <div class="skill-label">MERN Stack</div>
           <div class="skill-bar"><div class="skill-bar-fill" style="width: 30%; background-color: #ffc000;">30%</div></div>
         </div>
-      </ul>
-    </section>
+        </ul>
+      </section>
 
-    <!-- ====== EDUCATION SECTION ====== -->
-    <section id="education" class="text-center">
-      <h2>Education</h2>
-      <p>Currently studying web development at PLP Academy. Background in business and tech infrastructure.</p>
-      <p>Attended Kirinyaga University 2019-2023</p>
-      <p>Bachelor's Degree in Procurement & Supply Chain Management.</p>
-      <p>Attended CAPYEI Institute - June 2019 - August 2019.</p>
-      <p>Certified in entrepreneurship and people management skills.</p>
-    </section>
+      <section id="education" class="text-center">
+        <h2>Education</h2>
+        <p>Currently studying web development at PLP Academy.</p>
+        <p>Attended Kirinyaga University 2019-2023</p>
+        <p>Bachelor's Degree in Procurement & Supply Chain Management.</p>
+        <p>Attended CAPYEI Institute - June 2019 - August 2019.</p>
+        <p>Certified in entrepreneurship and people management skills.</p>
+      </section>
 
-    <!-- ====== PROJECTS SECTION ====== -->
-    <section id="projects" class="text-center">
-      <h2>Projects</h2>
-      <ul>
-        <li><a href="https://github.com/mils630/website2.0/blob/main/index.html" target="https://github.com/mils630/website2.0/blob/main/index.html">PLP Project</a></li>
+      <section id="projects"  class="text-center">
+        <h2>Projects</h2>
+        <ul>
+          <li><a href="https://github.com/mils630/website1.0" target="_blank">PLP Project</a></li>
+        </ul>
         <a href="cv.pdf" class="download-cv" download>Download My CV</a>
-      </ul>
-    </section>
+      </section>
 
-    <!-- ====== INTERESTS SECTION ====== -->
-    <section id="interests" class="text-center">
-      <h2>Personal Interests</h2>
-      <ul>
-        <li>Reading fantasy (LOTR & Harry Potter)</li>
-        <li>Exploring open-source software</li>
-        <li>Creative storytelling with code</li>
-        <li>Reading self-help books</li>
-        <li>Pro swimming</li>
-        <li>Meditation</li>
-        <li>Data analysis</li>
-      </ul>
-    </section>
+      <section id="interests" class="text-center">
+        <h2>Personal Interests</h2>
+        <ul>
+          <li>Reading fantasy (LOTR & Harry Potter)</li>
+          <li>Exploring open-source software</li>
+          <li>Creative storytelling with code</li>
+          <li>Reading self-help books</li>
+          <li>Pro swimming</li>
+          <li>Meditation</li>
+          <li>Data analysis</li>
+        </ul>
+      </section>
 
-    <section id="contact">
-      <h2>Leave a Comment</h2>
+      <section id="contact">
+        <h2>Leave a Comment</h2>
         <form action="https://formsubmit.co/milanmutheu1@gmail.com" method="POST">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required />
@@ -110,18 +106,15 @@
 
           <button type="submit">Send Message</button>
         </form>
-      <h2>Contact</h2>
-      <p>Email: milanmutheu1@gmail.com</p>
-      <p>GitHub: <a href="https://github.com/mils630" target="_blank">mils630</a></p>
-    </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 Milan Mutheu. All rights reserved.</p>
-  </footer>
-</div>
+        <p>Email: <a href="mailto:milanmutheu1@gmail.com">milanmutheu1@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/mils630" target="_blank">mils630</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Milan Mutheu. All rights reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>
-
-
-

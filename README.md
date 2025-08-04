@@ -7,6 +7,9 @@ It's actually very basic...
 Here is link to a deployed version **_https://website2-0-86kz.vercel.app/_**
 
                         Feature
+**Has a toogle button**
+ since some users prefer dark them while other prefer light mode, played around with it and some little color blend ...though the effect dint apply to thw whole page the left and right margins didnt seem to change mode ...working to improve that little hap
+
 **Smooth Navigation**  
   Section-based homepage structure for easy scrolling and quick access to different content areas.
 

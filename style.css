@@ -6,11 +6,6 @@ body {
   color: #f0f0f0;
 }
 
-.site-wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
 header {
   background-color: #5555db;
   color: white;
@@ -22,21 +17,6 @@ header {
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
-}
-
-.profile-pic {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-right: 20px;
-  object-fit: cover;
-  border: 2px solid white;
-  transition: transform 0.3s ease;
-}
-
-.profile-pic:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .header-title {
@@ -89,8 +69,148 @@ ul li {
   text-align: center;
 }
 
-.projects-font {
-  font-family: 'Courier New', Courier, monospace; /* Different font for projects section */
+/* ========== GENERAL STYLES ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', serif;
+  line-height: 1.6;
+  transition: background-color 0.4s, color 0.4s;
+  padding: 0 20px;
+}
+
+.site-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ========== THEME TOGGLE ========== */
+.theme-toggle-checkbox {
+  display: none;
+}
+
+.theme-toggle-label {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: yellow;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999;
+  transition: background 0.3s;
+}
+
+.theme-toggle-checkbox:checked + .theme-toggle-label {
+  background: #111;
+}
+
+.theme-toggle-checkbox:checked ~ .site-wrapper {
+  background-color: #111;
+  color: #f0f0f0;
+}
+
+.theme-toggle-checkbox:checked ~ .site-wrapper header,
+.theme-toggle-checkbox:checked ~ .site-wrapper footer {
+  background-color: #222;
+}
+
+/* ========== HEADER ========== */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #8dbceb;
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-title h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  gap: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 5px 10px;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 4px;
+}
+
+nav ul li a:hover {
+  background: #4472c4;
+  color: #fff;
+}
+
+/* ========== SECTIONS ========== */
+section {
+  margin: 40px 0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ========== SKILLS ========== */
+.skill-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.skill-label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.skill-bar {
+  width: 100%;
+  background-color: #cf9d9d;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.skill-bar-fill {
+  height: 25px;
+  line-height: 25px;
+  color: rgb(243, 236, 236);
+  padding-left: 10px;
+  border-radius: 5px;
+  transition: width 1s ease-out;
 }
 
 /* ========== PROJECTS & CV ========== */
@@ -187,4 +307,3 @@ footer {
   background: #fff;
   color: #000;
 }
-
